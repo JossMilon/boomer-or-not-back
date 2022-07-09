@@ -1,0 +1,22 @@
+{
+  "name": "boomer-or-not",
+  "version": "1.0.0",
+  "description": "",
+  "main": "do-you-boom.js",
+  "scripts": {
+    "scrape": "esr ./do-you-boom.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "esbuild-runner": "^2.2.1",
+    "express": "^4.18.1",
+    "express-formidable": "^1.2.0"
+  }
+}
