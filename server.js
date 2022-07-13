@@ -35,7 +35,7 @@ app.post("/which-gen", async (req, res) => {
     searchPerson.src = `https:${searchPersonPicRoute}`;
 
     //Get the wikipedia name
-    searchPerson.name = $(".infobox-above").text();
+    searchPerson.name = $(".infobox-above div").text();
 
     //Get the birth date
     const searchedPersonBday = new Date($(".bday").text());
