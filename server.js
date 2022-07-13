@@ -53,7 +53,11 @@ app.post("/which-gen", async (req, res) => {
         : "Gen Z";
 
     //Return response
-    res.status(200).json(searchPerson);
+    if (searchPerson.birthYear) {
+      res.status(200).json(searchPerson);
+    } else {
+      res.status(400).json({ message: "search has no DoB" });
+    }
   } catch (error) {
     res.status(400).json({ message: "search failed" });
   }
