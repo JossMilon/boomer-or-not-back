@@ -28,9 +28,5 @@ The response from this route is an object containing:
 
 Start by parsing the search terms. This is very limited and will throw a lot of exceptions. It's based on fact the Wikipedia systematically use routes with First-name_Family-name, with both being capitalized. 
 
-Using axios, we load the response from wikipedia inside a cheerio variable using load. We'll then use Jquery to navigate the virtual DOM created with Cheerio to extract data and and populate the response object. 
-
-## Remaining issues
-
-- Most critical issue atm is the CORB policy blocking the use of the wikipedia picture. Most likely, we would need to upload the picture to our own DB and serve it to the front. Or might need to use other scrapper to handle this part. 
+Using axios, we load the response from wikipedia inside a cheerio variable using load. We'll then use Jquery to navigate the virtual DOM created with Cheerio to extract data and and populate the response object.
 
